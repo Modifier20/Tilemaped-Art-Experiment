@@ -1,5 +1,5 @@
-from player import *
-from sprites import *
+from Player import *
+from Sprites import *
 
 def build_map(self, tilemap):
     for i, row in enumerate(tilemap):

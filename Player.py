@@ -1,7 +1,7 @@
 import pygame
-from sprites import *
-import maps
-from sounds import *
+from Sprites import *
+import Maps
+from Sounds import *
 import random
 
 class Player(pygame.sprite.Sprite):

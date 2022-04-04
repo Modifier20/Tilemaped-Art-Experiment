@@ -4,12 +4,12 @@
 #
 
 import pygame, sys
-from sounds import *
-from player import *
-from map_build import *
-import maps
-from sprites import *
-from config import *
+from Sounds import *
+from Player import *
+from MapBuild import *
+import Maps
+from Sprites import *
+from Config import *
 
 pygame.display.set_caption("")
 
@@ -19,10 +19,10 @@ class Game:
         self.screen = pygame.display.set_mode((WIN_WIDTH, WIN_HEIGHT))
         self.clock = pygame.time.Clock()
         self.running = True
-        self.terrainsheet = Spritesheet('terrain1.png')
-        self.character_spritesheet = Spritesheet('character.png')
-        self.enemy_spritesheet = Spritesheet('enemy.png')
-        self.attack_spritesheet = Spritesheet('attack.png')
+        self.terrainsheet = Spritesheet('res/ground.png')
+        self.character_spritesheet = Spritesheet('res/character.png')
+        self.enemy_spritesheet = Spritesheet('res/enemy.png')
+        self.attack_spritesheet = Spritesheet('res/attack.png')
 
     def createTilemap(self, tilemap):
         build_map(self, tilemap)
@@ -69,7 +69,7 @@ class Game:
             self.draw()
 
 
-TILEMAP = maps.world_1.stage_1
+TILEMAP = Maps.world_1.stage_1
 game = Game()
 game.new(TILEMAP)
 while game.running:

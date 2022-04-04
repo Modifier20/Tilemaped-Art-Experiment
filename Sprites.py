@@ -1,8 +1,8 @@
 import pygame
-from config import *
+from Config import *
 import random
-from animation import *
-import maps
+from Animation import *
+import Maps
 
 class Spritesheet:
     def __init__(self, file):

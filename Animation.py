@@ -1,4 +1,4 @@
-import math, pygame, sprites
+import math, pygame, Sprites
 
 def Player_animation(self):
 
